@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import {
   AccountBox,
   Group,
@@ -23,7 +22,8 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box flex={1} p={2}  sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box position="fixed">      
       <List>
         <ListItem disablePadding>
           <ListItemButton Component="a" href="/">
@@ -91,6 +91,7 @@ const Sidebar = () => {
         </ListItem>
       </List>
      </Box>
+    </Box>
   );
 };
 
