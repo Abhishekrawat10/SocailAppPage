@@ -50,10 +50,10 @@ const Navbar = () => {
           <Badge badgeContent={4} color="error">
             <Notifications />
           </Badge>
-          <Avatar sx={{ height: "27px" }} onClick={(e)=>setOpen(true)}/>
+          <Avatar sx={{ height: "27px" }} onClick={(e) => setOpen(true)} />
         </Icons>
-        <UserBox sx={{ display: { xs: "flex", sm: "none"}}}>
-          <Avatar sx={{ height: "27px" }} onClick={(e)=>setOpen(true)}/>
+        <UserBox sx={{ display: { xs: "flex", sm: "none" } }}>
+          <Avatar sx={{ height: "27px" }} onClick={(e) => setOpen(true)} />
           <Typography variant="h5">John</Typography>
         </UserBox>
       </Toolbar>
@@ -61,7 +61,7 @@ const Navbar = () => {
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
         open={open}
-        onClose={(e)=>setOpen(false)} 
+        onClose={(e) => setOpen(false)}
         anchorOrigin={{
           vertical: "top",
           horizontal: "right",
@@ -72,7 +72,7 @@ const Navbar = () => {
         }}
       >
         <MenuItem>Profile</MenuItem>
-        <MenuItem >My account</MenuItem>
+        <MenuItem>My account</MenuItem>
         <MenuItem>Logout</MenuItem>
       </Menu>
     </AppBar>
