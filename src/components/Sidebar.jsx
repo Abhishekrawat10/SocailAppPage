@@ -18,11 +18,9 @@ import {
   ListItemText,
   Switch,
 } from "@mui/material";
-// import { light } from "@mui/material/styles/createPalette";
-// import React, { useState } from "react";
 
-const Sidebar = ({ mode, setMode }) => {
-  // const [icon,setIcon] = useState(LightMode);
+
+const Sidebar = ({ mode, setMode}) => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">

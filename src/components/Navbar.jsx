@@ -40,8 +40,11 @@ const Navbar = () => {
           ChatOn
         </Typography>
         <ChatIcon sx={{ display: { xs: "block", sm: "none" } }} />
-        <Search>
-          <InputBase placeholder="Search..." />
+        <Search color="primary">
+          <InputBase
+            placeholder="Search..."
+            sx={{ width: "100%", color: "red" }}
+          />
         </Search>
         <Icons sx={{ display: { xs: "none", sm: "flex" } }}>
           <Badge badgeContent={4} color="error">
